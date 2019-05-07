@@ -38,6 +38,11 @@ nav {
     font-size: 14px
 }
 
+.nav-links a:hover {
+    background: purple;
+    transition: 0.5s
+}
+
 /* .burger {
     display: none;
     cursor: pointer
