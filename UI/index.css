@@ -2,7 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background: #080808
+    background: #20024a
 }
 
 /* Navbar styling */
@@ -43,52 +43,6 @@ nav {
     background: purple;
     transition: 0.5s
 }
-
-/* .burger {
-    display: none;
-    cursor: pointer
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px
-}
-
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    body {
-        overflow: hidden;
-    }
-
-    .nav-links {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #5d4954;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%)
-    }
-
-    .nav-links li {
-        opacity: 0
-    }
-
-    .burger {
-        display: block
-    }
-
-}  */
 
 /*  card box/containers styling */
 .container {
@@ -146,19 +100,19 @@ nav {
 }
 
 .container .box:nth-child(1) .details {
-    background: red
+    background: #8553cb
 }
 
 .container .box:nth-child(2) .details {
-    background: blue
+    background: #fe8f01
 }
 
 .container .box:nth-child(3) .details {
-    background: yellow
+    background: #79d400
 }
 
 .container .box:nth-child(4) .details {
-    background: rgb(241, 120, 140)
+    background: #ff3b34
 }
 
 .container .box:nth-child(5) .details {
@@ -209,4 +163,47 @@ nav {
 .container .box .details .content a:hover {
     background: #fff;
     color: #262626
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box
+    }
+
+    .container .box {
+        height: 250px;
+    }
+
+    .container .box .thumb {
+        display: none
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: initial
+    }
+
+    .container .box {
+        width: 50%;
+        height: 250px;
+        float: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        top: 0;
+        left: 0;
+        transform: translate(0)
+    }
+
+    .container .box {
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
 }
