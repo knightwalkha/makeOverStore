@@ -11,7 +11,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color: #5d4954;
+    background-color: rgba(0,0,0,1);
     font-family: sans-serif
 }
 
