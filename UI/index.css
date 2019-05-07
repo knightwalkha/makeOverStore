@@ -1,7 +1,8 @@
-* {
+body {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    background: #20024a
 }
 
 /* Navbar styling */
@@ -11,7 +12,7 @@ nav {
     align-items: center;
     min-height: 10vh;
     background-color: #5d4954;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: sans-serif
 }
 
 .logo {
@@ -88,3 +89,124 @@ nav {
     }
 
 }  */
+
+/*  card box/containers styling */
+.container {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: auto;
+     height: auto;
+     display: flex
+}
+
+.container .box {
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #ccc;
+    transition: 0.5s
+}
+
+.container .box:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,1)
+}
+
+.container .box .thumb {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden
+}
+
+.container .box:nth-child(odd) .thumb {
+    bottom: 0;
+    left: 0
+}
+
+.container .box .thumb img {
+    width: 100%;
+    height: 250px
+}
+
+.container .box .details {
+    position: absolute;
+    width: 100%;
+     height: 250px;
+     overflow: hidden;
+     background: #262626
+}
+
+.container .box:nth-child(even) .details {
+    bottom: 0;
+    left: 0
+}
+
+.container .box:nth-child(1) .details {
+    background: red
+}
+
+.container .box:nth-child(2) .details {
+    background: blue
+}
+
+.container .box:nth-child(3) .details {
+    background: yellow
+}
+
+.container .box:nth-child(4) .details {
+    background: pink
+}
+
+.container .box:nth-child(5) .details {
+    background: orangered
+}
+
+.container .box:nth-child(6) .details {
+    background: green
+}
+
+.container .box .details .content {
+    position: absolute;
+    top: calc(50% - 16px);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s
+}
+
+.container .box:hover .details .content {
+    top: calc(50%)
+}
+
+.container .box .details .content h3 {
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    color: #fff
+}
+
+.container .box .details .content a {
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform: scale(0)
+}
+
+.container .box:hover .details .content a {
+    transform: scale(1)
+}
+
+.container .box .details .content a:hover {
+    background: #fff;
+    color: #262626
+}
