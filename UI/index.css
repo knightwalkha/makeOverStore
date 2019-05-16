@@ -1,82 +1,98 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background: #20024a;
-    padding-top: 70px;
-    padding-bottom: 30px
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
 }
 
 #main {
-    min-height: 100% 
+    overflow: auto;
+    padding-bottom: 50px;
 }
 
-/* Navbar styling */
-nav {
-    width: 100%;
-    display: flex;
-    padding: 20px 0 0 0;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    height: 70px; 
-    background-color: rgba(0,0,0,1);
-    font-family: sans-serif;
-    position: fixed;
-    top: 0
+/* Navbar */
+#nav {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    list-style: none;
+    padding: 10px;
+    height: 40px;
 }
 
-.logo {
-    color: rgb(226, 226, 226);
+#nav li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+#nav li a:hover {
+    color: blueviolet
+}
+
+#nav .logo {
+    float: left;
     letter-spacing: 5px;
-    font-size: 20px
+    padding-left: 20px;
+    font-weight: bold;
 }
 
-.banner {
-    width: 100%;
-    display: block
+#nav .logo a {
+    text-decoration: none;
+    color: #fff
 }
 
-.banner .banner-img {
-    width: 100%;
-    display: block;
+/* Banner styling */
+.img-container {
+    background-image: url("./IMGZ/banner2.jpg");
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh
+    position: relative;
 }
 
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 30%
-} 
-
-.nav-links li {
-    list-style: none;
+.inner-container {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    height: auto;margin-top: 200px;
 }
 
-.nav-links a {
-    color: rgb(226, 226, 226);
-    text-decoration: none;
+h1 {
+    font-size: 7em;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin-top: -17px;
     letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px
-}
-
-.nav-links a:hover {
-    background: purple;
-    transition: 0.5s
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 400;
 }
 
 /*  card box/containers styling */
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    height: 500px;
+    width: 1500px;
+    height: 90%;
+    margin: 20px auto;
     display: flex
 }
 
@@ -173,8 +189,6 @@ nav {
 .container .box .details .content a {
     display: inline-block;
     padding: 5px 20px;
-    color: #fff;
-    border: 2px solid #fff;
     text-decoration: none;
     transition: 0.5s;
     border-radius: 20px;
@@ -188,6 +202,18 @@ nav {
 .container .box .details .content a:hover {
     background: #fff;
     color: #262626
+}
+
+/* Footer styling */
+#footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    height: 50px;
+    margin-top: -50px;
+    clear: both;
+    font-size: 18px;
 }
 
 @media (max-width: 1000px) {
@@ -231,25 +257,4 @@ nav {
         height: 250px;
         float: none;
     }
-}
-
-/* footer styling */
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 30px; 
-    background-color: rgba(0,0,0,1);
-    font-family: sans-serif;
-    position: fixed;
-    bottom: 0
-}
-
-footer p {
-    color: rgb(226, 226, 226);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px
 }
