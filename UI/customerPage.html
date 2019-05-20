@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A web app that enables users get their makeup anywhere they are">
+  <meta name="keywords" content="HTML,CSS,JavaScript,makeover,store,makeup">
+  <meta name="author" content="Nelson Chinedu">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Welcome to makeover store</title>
+</head>
+<body>
+  <header>
+    <div class="sm-screen">
+      <div class="sm-screen-wrapper">
+      <input type="text" name="" id="" class="product-search" placeholder="Search product">
+      <button class="sm-btn-search">Search</button>
+      <div class="sm-top-navbar">
+        <a href="index.html" class="brand-title">MakeOver</a>
+        <span class="cart"><i class="fas fa-shopping-cart"></i><span class="qty">1</span></span>
+        <button class="sm-btn-menu" id="btnIcon">Menu</button>
+        <nav class="sm-main-nav" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li class="btn-signup"><a href="signup.html">Sign up</a></li>
+        </nav>
+      </div>
+      </div>
+    </div>
+    <div class="md-screen">
+    <nav class="top-nav">
+      <ul class="top-nav-left">
+        <li>Operating Hours</li>
+        <li>8a.m - 5p.m Mon - Fri</li>
+      </ul>
+      <ul class="top-nav-right">
+        <span><i class="fas fa-truck fa-2x"></i></span>
+        <li>Free delivery</li>
+      </ul>
+    </nav>
+    <nav class="bottom-nav">
+      <div class="menu-wrapper">
+        <div class="menu-left">
+          <ul>
+            <li class="brand-li"><a href="index.html" class="brand-title">MakeOver</a></li>
+            <div class="menus">
+              <li class="active-menu"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="menu-center">
+          <input type="text" placeholder="Search product">
+          <button class="btn-search">Search</button>
+        </div>
+        <div class="menu-right">
+          <ul>
+            <li><i class="fas fa-shopping-cart"></i><span class="qty">1</span></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="btn-signup"><a href="signup.html">Signup</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="banner-container">
+      <div class="banner-wrapper">
+      <div class="banner-text-wrapper">
+        <h2 class="banner-text">Latest &amp; Exclusive makeup kits collection for women</h2>
+        <a href="#catalog"><button class="btn-shop">Shop</button></a>
+      </div>
+      <div class="banner-img-wrapper">
+          <img
+          sizes="(max-width: 1400px) 100vw, 1400px"
+          srcSet="
+          assets/image/res_image/look2_fqfdeu_c_scale,w_200.png 200w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_228.png 228w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_254.png 254w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_278.png 278w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_299.png 299w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_320.png 320w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_340.png 340w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_359.png 359w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_378.png 378w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_395.png 395w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_412.png 412w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_429.png 429w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_445.png 445w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_462.png 462w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_477.png 477w,
+          assets/image/res_image/look2_fqfdeu_c_scale,w_480.png 480w"
+          src="assets/image/res_image/look2_fqfdeu_c_scale,w_480.png"
+          alt="banner-logo"
+          style=''/>
+      </div>
+    </div>
+    </div>
+  </header>
+  <section>
+    <div class="main-section" id="catalog">
+      <div class="main">
+        <h2>New products</h2>
+        <div class="product-catalog">
+          <div class="item">
+            <img src="assets/image/foundation 2.jpg" alt="">
+            <div class="product-detail">
+              <p>Renergie Lift Makeup</p>
+              <p>-N- 3500</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/foundation.jpg" alt="">
+            <div class="product-detail">
+              <p>Liquid Foundation</p>
+              <p>-N- 4500</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/foundation 2.jpg" alt="">
+            <div class="product-detail">
+              <p>face brush</p>
+              <p>-N- 2000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/image 4.jpg" alt="">
+            <div class="product-detail">
+              <p>Focallure Face</p>
+              <p>-N- 4000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-catalog">
+            <div class="item">
+              <img src="assets/image/foundation 2.jpg" alt="">
+              <div class="product-detail">
+                <p>Renergie Lift Makeup</p>
+                <p>-N- 3500</p>
+              </div>
+              <button class="btn-add">Add to cart</button>
+            </div>
+            <div class="item">
+              <img src="assets/image/foundation.jpg" alt="">
+              <div class="product-detail">
+                <p>Liquid Foundation</p>
+                <p>-N- 4500</p>
+              </div>
+              <button class="btn-add">Add to cart</button>
+            </div>
+            <div class="item">
+              <img src="assets/image/foundation 2.jpg" alt="">
+              <div class="product-detail">
+                <p>face brush</p>
+                <p>-N- 2000</p>
+              </div>
+              <button class="btn-add">Add to cart</button>
+            </div>
+            <div class="item">
+              <img src="assets/image/image 4.jpg" alt="">
+              <div class="product-detail">
+                <p>Focallure Face</p>
+                <p>-N- 4000</p>
+              </div>
+              <button class="btn-add">Add to cart</button>
+            </div>
+          </div>
+        <button class="btn-more">View more products</button>
+      </div>
+    </div>
+    <div class="banner-ad">
+      <img src="assets/image/hero-add.gif" alt="">
+    </div>
+    <div class="trendy-products">
+        <h2>Best seller</h2>
+        <div class="product-catalog">
+          <div class="item">
+            <img src="assets/image/foundation 2.jpg" alt="">
+            <div class="product-detail">
+              <p>MAYBELLINE FIT ME</p>
+              <p>-N- 5000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/img7.jpg" alt="">
+            <div class="product-detail">
+              <p>Matte Poreless Liquid</p>
+              <p>-N- 3000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/img7.jpg" alt="">
+            <div class="product-detail">
+              <p>NYX Makeup</p>
+              <p>-N- 2800</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/foundation 2.jpg" alt="">
+            <div class="product-detail">
+              <p>Lip Gloss Shimmer</p>
+              <p>-N- 3000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-catalog">
+          <div class="item">
+            <img src="assets/image/foundation 2.jpg" alt="">
+            <div class="product-detail">
+              <p>MAYBELLINE FIT ME</p>
+              <p>-N- 5000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/img7.jpg" alt="">
+            <div class="product-detail">
+              <p>Matte Poreless Liquid</p>
+              <p>-N- 3000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/img7.jpg" alt="">
+            <div class="product-detail">
+              <p>NYX Makeup</p>
+              <p>-N- 2800</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+          <div class="item">
+            <img src="assets/image/foundation 2.jpg" alt="">
+            <div class="product-detail">
+              <p>Lip Gloss Shimmer</p>
+              <p>-N- 3000</p>
+            </div>
+            <button class="btn-add">Add to cart</button>
+          </div>
+        </div>
+    </div>
+    <div class="subscription-container">
+      <div class="subscription-text">
+        <p>Shhhhh!!! Enter your email address and be the first to get our Exclusive products</p>
+      </div>
+      <div class="subscription-form">
+        <form action="">
+          <div class="form-group">
+            <label for="email address">Email address</label>
+            <input type="text" name="" id="" placeholder="Enter email address">
+          </div>
+          <button class="btn-subscribe"><i class="fas fa-envelope"></i> Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="actionModal" class="orderModal">
+
+      <!-- Modal content -->
+      <div class="modal-content-order">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2> Action</h2>
+        </div>
+        <div class="modal-body">
+          <div class="btn-order">
+            <button id="btnCheckout">Checkout</button>
+            <button id="btnContinue">Continue Shopping</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p>copyright &copy; 2018- Made with love from Nelson</p>    
+        </div>
+      </div>
+  </div>
+
+  <footer>
+    <div class="footer-first">
+      <h2>Get in touch</h3>
+      <h4>location:</h4>
+      <p>1004, victoria island</p>
+      <p>lagos</p>  
+    </div>
+    <div class="footer-second">
+      <h2>contact</h2>
+      <p>phone: <span>+234 299892</span></p>
+      <p>Email: <span>email@gmail.com</span></p>
+    </div>
+    <div class="footer-third">
+      <h2>Quick links</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="terms&condition.html">Policy Return</a></li>
+      </ul>
+    </div>
+    <div class="bottom-nav">
+      <input type="text" placeholder="Search product">
+      <button class="btn-search-btm">Search</button>
+      <p>copyright &copy; 2018- Made with love from Nelson</p>
+    </div>
+  </footer> 
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
