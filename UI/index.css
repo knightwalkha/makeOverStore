@@ -57,12 +57,16 @@ html, body {
 
 /* Banner styling */
 .img-container {
-    background-image: url("./IMGZ/banner2.jpg");
+    background-image: url("./IMGZ/banner.jpg");
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+.img-container:hover {
+    background-image: url("./IMGZ/banner2.jpg");
 }
 
 .inner-container {
