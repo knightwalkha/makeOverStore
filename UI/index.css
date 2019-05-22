@@ -56,14 +56,26 @@ html, body {
 }
 
 /* Banner styling */
+.load {
+    animation: slide 2s;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: slide 40s infinite;
+}
+
 .img-container {
-    background-image: url("./IMGZ/banner2.jpg");
+    /* background-image: url("./IMGZ/banner2.jpg"); */
     height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
 
 .inner-container {
     text-align: center;
@@ -86,6 +98,39 @@ h2 {
     font-size: 1.7em;
     text-align: center;
     font-weight: 400;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    20% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    20.01% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    40% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    40.01% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    60% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    60.01% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    80% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    80.01% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
+    100% {
+        background-image: url("./IMGZ/banner/banner3.jpg");
+    }
 }
 
 /*  card box/containers styling */
