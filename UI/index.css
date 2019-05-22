@@ -64,7 +64,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: slide 40s infinite;
+    animation: slide 20s infinite;
 }
 
 .img-container {
@@ -108,28 +108,28 @@ h2 {
         background-image: url("./IMGZ/banner/banner3.jpg");
     }
     20.01% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner4.jpg");
     }
     40% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner4.jpg");
     }
     40.01% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner5.jpg");
     }
     60% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner5.jpg");
     }
     60.01% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner6.jpg");
     }
     80% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner6.jpg");
     }
     80.01% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner7.jpg");
     }
     100% {
-        background-image: url("./IMGZ/banner/banner3.jpg");
+        background-image: url("./IMGZ/banner/banner7.jpg");
     }
 }
 
