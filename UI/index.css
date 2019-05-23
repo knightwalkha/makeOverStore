@@ -65,6 +65,7 @@ html, body {
     background-size: cover;
     background-position: center;
     animation: slide 20s infinite;
+    height: 70vh;
 }
 
 .img-container {
@@ -108,10 +109,10 @@ h2 {
         background-image: url("./IMGZ/banner/banner3.jpg");
     }
     20.01% {
-        background-image: url("./IMGZ/banner/banner4.jpg");
+        background-image: url("./IMGZ/banner/banner9.jpg");
     }
     40% {
-        background-image: url("./IMGZ/banner/banner4.jpg");
+        background-image: url("./IMGZ/banner/banner9.jpg");
     }
     40.01% {
         background-image: url("./IMGZ/banner/banner5.jpg");
