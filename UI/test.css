@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+/* Navbar */
+#nav {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    list-style: none;
+    padding: 10px;
+    height: 40px;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+#nav li a:hover {
+    color: blueviolet
+}
+
+#nav .logo {
+    float: left;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#nav .logo a {
+    text-decoration: none;
+    color: #fff
+}
+
+/* content styling */
+.container {
+    position: relative;
+    width: 1000px;
+    margin: 150px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px
+}
+
+.container .card {
+    position: relative; 
+    background: #ccc;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
