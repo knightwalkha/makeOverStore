@@ -28,11 +28,50 @@
                 <div class="forgot">
                     <a href="#">Forgot Password</a>
                 </div>
-                <div class="btn">
+                <div class="btn" onclick="getInfo()">
                     Login
                 </div>
             </div>
         </div>
     </div>
+    <script language="javascript">
+        // Validating users based on saved data
+    var registeredUser = [
+        {
+            username: "Johndoe",
+            password: "1234"
+        },
+        {
+            username: "Chukwuemeka",
+            password: "GodIsGGood"
+        },
+        {
+            username: "Aliyah",
+            password: "allahIsGreat"
+        },
+        {
+            username: "Ayoolouwa",
+            password: "Oluwaseun"
+        },
+        {
+            username: "Zainab",
+            password: "jogodo"
+        },
+        {
+            username: "Stoneybrow",
+            password: "9874"
+        },
+        {
+            username: "Jackyblack",
+            password: "dblackone"
+        }
+    ]
+
+    function getInfo() {
+        var username = document.getElementById("username".value)
+        var password = document.getElementById("password".value)
+        document.write("you're username is" + username + "and your password is" + password)
+    }
+    </script>
 </body>
 </html>
