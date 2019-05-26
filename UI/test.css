@@ -63,6 +63,7 @@ html, body {
     background: #fff;
     box-shadow: 0 5px 15px rgba(0,0,0,.25);
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .product .imgbox {
@@ -79,7 +80,7 @@ html, body {
 .details {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -50px;
     background: #fff;
     padding: 10px;
     box-sizing: border-box;
@@ -87,6 +88,10 @@ html, body {
     transition: .5s
 }
 
+.product:hover .details {
+    bottom: 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,.25)
+}
 .details h2 {
     margin: 0;
     padding: 0;
@@ -114,4 +119,8 @@ a {
     text-decoration: none;
     transition: .3s;
     cursor: pointer;
+}
+
+a:hover {
+    background: #ff209a;
 }
