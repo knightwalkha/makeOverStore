@@ -1,0 +1,47 @@
+/* content styling */
+.container {
+    position: relative;
+    width: 1500px;
+    margin: 150px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 540px;
+    grid-gap: 40px
+}
+
+.container .card {
+    position: relative; 
+    background: #000;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    opacity: 0.5;
+}
+
+.container .card .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
