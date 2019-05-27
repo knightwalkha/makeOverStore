@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <ul id="nav">
+            <div class="logo">
+                <ul>
+                    <li>OMO TO DUN</li>
+                    <li>Add Item</li>
+                    <li><a href="orderPage.html">View Order</a></li>
+                </ul>
+            </div>
+            
+            <li>You do not have an account || <span><a href="signup.html">Signup</a></span></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="sub-container">
+            <div class="banner-img">
+                <img src="./IMGZ/login6.jpg" alt="img of a lady in a bath-tub">
+            </div>
+            <div class="login-form">
+                <div class="title">
+                    login form
+                </div>
+                <div class="input-fields">
+                    <label class="label">Username</label>
+                    <input type="text" class="input">
+                </div>
+                <div class="input-fields">
+                    <label class="label">Password</label>
+                    <input type="password" class="input">
+                </div>
+                <div class="forgot">
+                    <a href="#">Forgot Password</a>
+                </div>
+                <div class="btn" onclick="getInfo()">
+                    Login
+                </div>
+            </div>
+        </div>
+    </div>
+    <script language="javascript">
+        // Validating users based on saved data
+    var registeredUser = [
+        {
+            username: "Johndoe",
+            password: "1234"
+        },
+        {
+            username: "Chukwuemeka",
+            password: "GodIsGGood"
+        },
+        {
+            username: "Aliyah",
+            password: "allahIsGreat"
+        },
+        {
+            username: "Ayoolouwa",
+            password: "Oluwaseun"
+        },
+        {
+            username: "Zainab",
+            password: "jogodo"
+        },
+        {
+            username: "Stoneybrow",
+            password: "9874"
+        },
+        {
+            username: "Jackyblack",
+            password: "dblackone"
+        }
+    ]
+
+    function getInfo() {
+        var username = document.getElementById("username".value)
+        var password = document.getElementById("password".value)
+        document.write("you're username is" + username + "and your password is" + password)
+    }
+    </script>
+
+</body>
+</html>
