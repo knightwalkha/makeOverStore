@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+/* Navbar */
+#nav {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    list-style: none;
+    padding: 10px;
+    height: 40px;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+#nav li a:hover {
+    color: blueviolet
+}
+
+#nav .logo {
+    float: left;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#nav .logo a {
+    text-decoration: none;
+    color: #fff
+}
+
+/* Order content styling */
+.order {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.section-order {
+    margin: 40px auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Footer styling */
+#footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    height: 50px;
+    margin-top: -50px;
+    clear: both;
+    font-size: 18px;
+}
