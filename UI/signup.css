@@ -1,15 +1,69 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+html,body {
+    margin: 0;
+    height: 100%;
     padding: 0;
     background: url(./IMGZ/anodaSignup.jpg);
     background-size: cover;
     background-position: center;
-    font-family: sans-serif
+    font-family: sans-serif;
+}
+
+#container {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+/* Navbar */
+#nav {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    list-style: none;
+    padding: 10px;
+    height: 40px;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+#nav li a:hover {
+    color: blueviolet
+}
+
+#nav .logo {
+    float: left;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#nav .logo a {
+    text-decoration: none;
+    color: #fff
 }
 
 .sign_up-box {
-    width: 520px;
-    height: 620px;
+    width: 1200px;
+    height: 820px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
     top: 50%;
@@ -22,15 +76,16 @@ body {
 
 h1 {
     margin: 0;
-    padding: 0 0 20px;
+    padding: 0 0 50px;
     text-align: center;
-    font-size: 30px;
+    font-size: 60px;
 }
 
 .sign_up-box p {
     margin: 0;
     padding: 0;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .sign_up-box input {
@@ -38,7 +93,7 @@ h1 {
     margin-bottom: 20px
 }
 
-.sign_up-box input[type="text"], input[type="password"], input[type="email"] {
+.sign_up-box input[type="text"], input[type="password"], input[type="checkbox"], input[type="email"] {
     border: none;
     border-bottom: 1px solid #fff;
     background: transparent;
@@ -51,10 +106,10 @@ h1 {
 .sign_up-box input[type="submit"] {
     border: none;
     outline: none;
-    height: 40px;
+    height: 60px;
     background: #1c8adb;
     color: #fff;
-    font-size: 18px;
+    font-size: 30px;
     border-radius: 20px
 }
 
@@ -72,4 +127,95 @@ h1 {
 
 .sign_up-box a:hover {
     color: #39dc79
+}
+
+/* Footer styling */
+#footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    height: 50px;
+    margin-top: -50px;
+    clear: both;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 540px) {
+    #nav li {
+        display: inline-block;
+        padding: 0 3px 0 3px;
+        font-size: 12px;
+    }
+
+    #nav .logo {
+        float: left;
+        letter-spacing: 2px;
+        padding-left: 5px;
+        font-weight: bold;
+    }
+
+    #nav li a:hover {
+        color: blue;
+    }
+
+    .sign_up-box {
+        width: 400px;
+        height: 520px;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .sign_up-box p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .sign_up-box input {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    
+    .sign_up-box input[type="text"], input[type="password"], input[type="checkbox"], input[type="email"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 20px;
+        color: #fff;
+        font-size: 10px
+    }
+    
+    .sign_up-box input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 30px;
+        background: #1c8adb;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 20px
+    }
+    
+    .sign_up-box input[type="submit"]:hover {
+        cursor: pointer;
+        background: #39dc79;
+        color: #000
+    }
+    
+    .sign_up-box a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #fff
+    }
+    
+    .sign_up-box a:hover {
+        color: #39dc79
+    }
 }
