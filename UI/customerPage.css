@@ -52,7 +52,14 @@ html, body {
 
 #nav .logo a {
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    background: none;
+}
+
+#nav .logo a:hover {
+    text-decoration: none;
+    color: blueviolet;
+    background: none;
 }
 
 /* Banner styling */

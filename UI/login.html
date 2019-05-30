@@ -14,7 +14,7 @@
                 <ul>
                     <li>OMO TO DUN</li>
                     <li>Add Item</li>
-                    <li><a href="orderPage.html">View Order</a></li>
+                    <li><a href="orderView.html">View Order</a></li>
                 </ul>
             </div>
             
@@ -41,15 +41,16 @@
                 <div class="forgot">
                     <a href="#">Forgot Password</a>
                 </div>
-                <div class="btn" onclick="getInfo()">
-                    Login
+                <div class="btn" >
+                    <a href="customerPage.html" onclick="getInfo()">Login</a>
                 </div>
-            </div>
+            </div> 
         </div>
     </div>
     <script language="javascript">
         // Validating users based on saved data
-    var registeredUser = [
+    var user = document.getElementById(li),
+        registeredUser = [
         {
             username: "Johndoe",
             password: "1234"
@@ -78,17 +79,20 @@
             username: "Jackyblack",
             password: "dblackone"
         }
-    ]
+    ],
+    localData;
 
-    function getInfo() {
-        var username = document.getElementById("username".value)
-        var password = document.getElementById("password".value)
-        document.write("you're username is" + username + "and your password is" + password)
-    }
+    localStorage.setItem('user',JSON.stringify(registeredUser))
+
+    localData = JSON.parse(localStorage.getItem('user'))
+
+    user.innerHTML = localData.registeredUser
+    
+    // function getInfo() {
+    //     var username = document.getElementById("username".value)
+    //     var password = document.getElementById("password".value)
+    //     document.write("you're username is" + username + "and your password is" + password)
+    // }
     </script>
-<<<<<<< HEAD
-=======
-
->>>>>>> gh-pages
 </body>
 </html>
