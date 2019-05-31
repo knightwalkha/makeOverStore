@@ -19,40 +19,44 @@
         </ul>
     </div>
     
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Admin Login</h1>
-			<input type="email" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <a href="#">Forgot your password?</a>
-			<button>Login</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Customer Login</h1>
-			<input type="email" placeholder="Username" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Login</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back! Admin</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Log In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Welcome, Friend!</h1>
-				<p>Enter your personal details and start your journey with us</p>
-				<button class="ghost" id="signUp">Log In</button>
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form action="#">
+				<h1>Admin Login</h1>
+				<input type="email" placeholder="Username" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>
+					<a href="admin_landingPage.html" onclick="getInfo()">Login</a>
+				</button>
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form action="#">
+				<h1>Customer Login</h1>
+				<input type="email" placeholder="Username" />
+				<input type="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button>
+					<a href="customerPage.html" onclick="getInfo()">Login</a>
+				</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Welcome Back! Admin</h1>
+					<p>To keep connected with us please login with your personal info</p>
+					<button class="ghost" id="signIn">Log In</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Welcome, Friend!</h1>
+					<p>Enter your personal details and start your journey with us</p>
+					<button class="ghost" id="signUp">Log In</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
     <!-- Footer -->
     <footer id="footer">
@@ -61,16 +65,56 @@
 
 <script language="javascript">
     const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
 
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+
+	// Validating users based on saved data
+	var user = document.getElementById(li),
+			registeredUser = [
+			{
+				username: "Johndoe",
+				password: "1234"
+			},
+			{
+				username: "Chukwuemeka",
+				password: "GodIsGGood"
+			},
+			{
+				username: "Aliyah",
+				password: "allahIsGreat"
+			},
+			{
+				username: "Ayoolouwa",
+				password: "Oluwaseun"
+			},
+			{
+				username: "Zainab",
+				password: "jogodo"
+			},
+			{
+				username: "Stoneybrow",
+				password: "9874"
+			},
+			{
+				username: "Jackyblack",
+				password: "dblackone"
+			}
+		],
+		localData;
+
+		localStorage.setItem('user',JSON.stringify(registeredUser))
+
+		localData = JSON.parse(localStorage.getItem('user'))
+
+		user.innerHTML = localData.registeredUser
 </script>
 </body>
 </html>
