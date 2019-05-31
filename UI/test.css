@@ -19,6 +19,45 @@ body {
 	margin: -20px 0 50px;
 }
 
+/* Navbar */
+#nav {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    list-style: none;
+    padding: 10px;
+    height: 40px;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+
+#nav li a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+#nav li a:hover {
+    color: blueviolet
+}
+
+#nav .logo {
+    float: left;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#nav .logo a {
+    text-decoration: none;
+    color: #fff
+}
+
 h1 {
 	font-weight: bold;
 	margin: 0;
