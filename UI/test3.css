@@ -1,22 +1,17 @@
-/* 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800'); */
-
 * {
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background: #f6f5f7;
+html,body {
     background-image: url('./IMGZ/login6.jpg');
+    /* display: flex; */
     background-repeat: no-repeat;
     background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
-	margin: -20px 0 50px;
+    height: 100%;
+    flex-direction: column;
+    /* margin: -20px 0 50px; */
 }
 
 /* Navbar */
@@ -27,12 +22,7 @@ body {
     text-align: right;
     list-style: none;
     padding: 10px;
-	height: 40px;
-	left: 0;
-	right: 0;
-	position: fixed;
-	z-index: 999;
-	margin-top: -75px;
+    height: 40px;
 }
 
 #nav li {
@@ -63,6 +53,7 @@ body {
     color: #fff
 }
 
+/* Login content styling */
 h1 {
 	font-weight: bold;
 	margin: 0;
@@ -149,7 +140,6 @@ input {
 	width: 1000px;
 	max-width: 100%;
 	min-height: 700px;
-	margin-top: 100px;
 }
 
 .form-container {
@@ -277,28 +267,18 @@ input {
 	width: 40px;
 }
 
-footer {
-    background-color: #222;
+/* Footer styling */
+#footer {
+    text-align: center;
+    background-color: #000;
     color: #fff;
-    font-size: 14px;
-    bottom: 0;
     position: fixed;
+    height: 50px;
+    margin-top: -50px;
+    clear: both;
+    bottom: 0;
     left: 0;
     right: 0;
-    text-align: center;
+    font-size: 18px;
     z-index: 999;
 }
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-}
-
