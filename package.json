@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/knightwalkha/makeOverStore/issues"
   },
-  "homepage": "https://github.com/knightwalkha/makeOverStore#readme"
+  "homepage": "https://github.com/knightwalkha/makeOverStore#readme",
+  "dependencies": {
+    "pg": "^7.11.0"
+  }
 }
