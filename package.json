@@ -1,0 +1,26 @@
+{
+  "name": "makeoverstore",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/knightwalkha/makeOverStore/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knightwalkha/makeOverStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knightwalkha/makeOverStore/issues"
+  },
+  "homepage": "https://github.com/knightwalkha/makeOverStore#readme"
+}
