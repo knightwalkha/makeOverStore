@@ -46,6 +46,42 @@ app.get('/admin_login', (req, res) => {
     });
 });
 
+// Getting an individual data for admin_login from MySQL
+app.get('/admin_login/:id', (req, res) => {
+    mysqlConnection.query('SELECT * FROM admin_login WHERE adminLoginId = ?', [req.params.id], (err, rows, fields) => {
+        if(!err)
+        res.send(rows);
+        else
+        console.log(err);
+    });
+});
+
+// deleting an individual data from admin_Login  
+app.delete('/admin_login/:id', (req, res) => {
+    mysqlConnection.query('DELETE FROM admin_login WHERE adminLoginId = ?', [req.params.id], (err, rows, fields) => {
+        if(!err)
+        res.send('Deleted successfully.');
+        else
+        console.log(err);
+    });
+});
+
+// Inserting/Adding an individual data to admin_login  
+app.post('/admin_login', (req, res) => {
+    let admin = req.body; 
+    var sql =  "SET @adminLoginID = ?; SET @Username = ?; SET @Password = ?;\
+    CALL admin_loginAddOrEdit(@adminLoginID, @Username, @Password);";
+    mysqlConnection.query(sql, [admin.adminLoginID, admin.Username, admin.Password], (err, rows, fields) => {
+        if(!err)
+            rows.forEach(element => {
+                if(element.constructor == Array)
+                res.send('Inserted new adminLoginID :' + element[0].adminLoginID);
+            });
+        else
+            console.log(err);
+    });
+});
+
 // Getting all data for admin_signup from MySQL
 app.get('/admin_signup', (req, res) => {
     mysqlConnection.query('SELECT * FROM admin_signup', (err, rows, fields) => {
